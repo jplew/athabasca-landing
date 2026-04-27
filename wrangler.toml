@@ -1,0 +1,7 @@
+name = "athabasca-landing"
+pages_build_output_dir = "."
+compatibility_date = "2026-04-27"
+
+[[kv_namespaces]]
+binding = "WAITLIST"
+id = "ATHABASCA_WAITLIST"
