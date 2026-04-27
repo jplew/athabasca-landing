@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Athabasca | Video Development Agent</title>
+    <meta
+      name="description"
+      content="Athabasca is a video development agent for turning raw footage, transcripts, and creative intent into finished video direction."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Athabasca home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Athabasca</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#capabilities">Capabilities</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#waitlist">Waitlist</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Video development agent</p>
+          <h1>Turn the raw shape of an idea into a directed video plan.</h1>
+          <p class="hero-text">
+            Athabasca is being built to help creators, editors, and researchers move from
+            footage, transcripts, notes, and reference material into a crisp creative brief,
+            story structure, clip map, and production-ready editing direction.
+          </p>
+          <form class="waitlist-form" id="waitlist-form" action="/api/waitlist" method="post">
+            <label class="sr-only" for="email">Email address</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required />
+            <button type="submit">Request waitlist access</button>
+          </form>
+          <p class="form-note" id="form-note" role="status">
+            Early access will be small and hands-on while the workflow is still taking shape.
+          </p>
+        </div>
+
+        <div class="agent-panel" aria-label="Athabasca preview">
+          <div class="panel-topbar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="timeline-preview">
+            <div class="track track-a"></div>
+            <div class="track track-b"></div>
+            <div class="track track-c"></div>
+            <div class="playhead"></div>
+          </div>
+          <div class="analysis-card primary">
+            <p>Current task</p>
+            <strong>Find the strongest story arc from 90 minutes of source material.</strong>
+          </div>
+          <div class="metric-grid">
+            <div>
+              <span>15</span>
+              <p>candidate moments</p>
+            </div>
+            <div>
+              <span>4</span>
+              <p>narrative beats</p>
+            </div>
+            <div>
+              <span>1</span>
+              <p>editing brief</p>
+            </div>
+          </div>
+          <div class="analysis-card">
+            <p>Agent output</p>
+            <strong>Hook, context, conflict, payoff, cut list, and follow-up questions.</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band" id="capabilities">
+        <div class="section-heading">
+          <p class="eyebrow">What it is for</p>
+          <h2>A creative operator for video-heavy work.</h2>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <span class="feature-index">01</span>
+            <h3>Transcript intelligence</h3>
+            <p>
+              Surface the moments worth building around, preserve the reasoning, and keep
+              timestamps close enough for an editor to act.
+            </p>
+          </article>
+          <article>
+            <span class="feature-index">02</span>
+            <h3>Story development</h3>
+            <p>
+              Shape raw material into hooks, arcs, objections, payoffs, and sequences that
+              can survive the trip from concept to timeline.
+            </p>
+          </article>
+          <article>
+            <span class="feature-index">03</span>
+            <h3>Editing direction</h3>
+            <p>
+              Move beyond generic summaries into concrete cut plans, clip candidates,
+              missing assets, and notes for the next production pass.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="workflow" id="workflow">
+        <div class="workflow-copy">
+          <p class="eyebrow">Final form</p>
+          <h2>An agent that can see the whole video pipeline.</h2>
+          <p>
+            The long-term goal is not another chat box beside your editing process. Athabasca
+            is meant to become a development layer that understands the source, tracks the
+            creative thesis, compares options, and hands off specific next actions.
+          </p>
+        </div>
+        <div class="workflow-steps">
+          <div>
+            <span>Input</span>
+            <p>Video links, local footage, transcripts, notes, references, and rough direction.</p>
+          </div>
+          <div>
+            <span>Develop</span>
+            <p>Analyze moments, find tension, build structures, and generate testable approaches.</p>
+          </div>
+          <div>
+            <span>Deliver</span>
+            <p>Creative brief, cut list, selected moments, asset gaps, and editor-ready instructions.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="waitlist-section" id="waitlist">
+        <div>
+          <p class="eyebrow">Private draft access</p>
+          <h2>Join the waitlist for early experiments.</h2>
+          <p>
+            Athabasca is early. The first people invited will help shape the practical workflow:
+            what inputs matter, what outputs are worth trusting, and where the agent should stay
+            out of the way.
+          </p>
+        </div>
+        <form class="waitlist-form secondary-form" id="bottom-waitlist-form" action="/api/waitlist" method="post">
+          <label class="sr-only" for="bottom-email">Email address</label>
+          <input id="bottom-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required />
+          <button type="submit">Request access</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <span>Athabasca</span>
+      <span>Video development agent in progress.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
